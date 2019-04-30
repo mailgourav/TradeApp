@@ -1,0 +1,4372 @@
+{
+  "contractName": "TradeImpl",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_bytesData",
+          "type": "bytes32[]"
+        },
+        {
+          "name": "_intData",
+          "type": "uint256[]"
+        },
+        {
+          "name": "_addressData",
+          "type": "address[]"
+        }
+      ],
+      "name": "submitTrade",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "tradeId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getTrade",
+      "outputs": [
+        {
+          "name": "_bytesData",
+          "type": "bytes32[]"
+        },
+        {
+          "name": "_intData",
+          "type": "uint256[]"
+        },
+        {
+          "name": "_addressData",
+          "type": "address[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506107c1806100206000396000f3fe60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063613e498014610051578063a3b1379914610181575b600080fd5b34801561005d57600080fd5b5061017f6004803603606081101561007457600080fd5b810190808035906020019064010000000081111561009157600080fd5b8201836020820111156100a357600080fd5b803590602001918460208302840111640100000000831117156100c557600080fd5b9091929391929390803590602001906401000000008111156100e657600080fd5b8201836020820111156100f857600080fd5b8035906020019184602083028401116401000000008311171561011a57600080fd5b90919293919293908035906020019064010000000081111561013b57600080fd5b82018360208201111561014d57600080fd5b8035906020019184602083028401116401000000008311171561016f57600080fd5b90919293919293905050506102a1565b005b34801561018d57600080fd5b506101ba600480360360208110156101a457600080fd5b81019080803590602001909291905050506104f0565b60405180806020018060200180602001848103845287818151815260200191508051906020019060200280838360005b838110156102055780820151818401526020810190506101ea565b50505050905001848103835286818151815260200191508051906020019060200280838360005b8381101561024757808201518184015260208101905061022c565b50505050905001848103825285818151815260200191508051906020019060200280838360005b8381101561028957808201518184015260208101905061026e565b50505050905001965050505050505060405180910390f35b60008686600060028111156102b257fe5b81811015156102bd57fe5b9050602002013590506102ce610733565b60008083815260200190815260200160002060a0604051908101604052908160008201548152602001600182015481526020016002820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016003820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200160048201548152505090508787600160028111156103c757fe5b81811015156103d257fe5b905060200201358160200181815250508383600060018111156103f157fe5b81811015156103fc57fe5b9050602002013573ffffffffffffffffffffffffffffffffffffffff16816040019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff1681525050838360018081111561045e57fe5b818110151561046957fe5b9050602002013573ffffffffffffffffffffffffffffffffffffffff16816060019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff168152505085856000808111156104cb57fe5b81811015156104d657fe5b905060200201358160800181815250505050505050505050565b60608060606104fd610733565b60008086815260200190815260200160002060a0604051908101604052908160008201548152602001600182015481526020016002820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016003820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016004820154815250509050806000015184600060028111156105fa57fe5b81518110151561060657fe5b90602001906020020181815250508060200151846001600281111561062757fe5b81518110151561063357fe5b90602001906020020181815250508060400151826000600181111561065457fe5b81518110151561066057fe5b9060200190602002019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff16815250508060600151826001808111156106ae57fe5b8151811015156106ba57fe5b9060200190602002019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff168152505080608001518360008081111561070857fe5b81518110151561071457fe5b9060200190602002018181525050838383935093509350509193909250565b60a0604051908101604052806000801916815260200160008019168152602001600073ffffffffffffffffffffffffffffffffffffffff168152602001600073ffffffffffffffffffffffffffffffffffffffff16815260200160008152509056fea165627a7a72305820c4f5f5b2adef40287f8cc8efc1368c24e0066b475b3dc4c9ada5d1e8946ec18d0029",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063613e498014610051578063a3b1379914610181575b600080fd5b34801561005d57600080fd5b5061017f6004803603606081101561007457600080fd5b810190808035906020019064010000000081111561009157600080fd5b8201836020820111156100a357600080fd5b803590602001918460208302840111640100000000831117156100c557600080fd5b9091929391929390803590602001906401000000008111156100e657600080fd5b8201836020820111156100f857600080fd5b8035906020019184602083028401116401000000008311171561011a57600080fd5b90919293919293908035906020019064010000000081111561013b57600080fd5b82018360208201111561014d57600080fd5b8035906020019184602083028401116401000000008311171561016f57600080fd5b90919293919293905050506102a1565b005b34801561018d57600080fd5b506101ba600480360360208110156101a457600080fd5b81019080803590602001909291905050506104f0565b60405180806020018060200180602001848103845287818151815260200191508051906020019060200280838360005b838110156102055780820151818401526020810190506101ea565b50505050905001848103835286818151815260200191508051906020019060200280838360005b8381101561024757808201518184015260208101905061022c565b50505050905001848103825285818151815260200191508051906020019060200280838360005b8381101561028957808201518184015260208101905061026e565b50505050905001965050505050505060405180910390f35b60008686600060028111156102b257fe5b81811015156102bd57fe5b9050602002013590506102ce610733565b60008083815260200190815260200160002060a0604051908101604052908160008201548152602001600182015481526020016002820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016003820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200160048201548152505090508787600160028111156103c757fe5b81811015156103d257fe5b905060200201358160200181815250508383600060018111156103f157fe5b81811015156103fc57fe5b9050602002013573ffffffffffffffffffffffffffffffffffffffff16816040019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff1681525050838360018081111561045e57fe5b818110151561046957fe5b9050602002013573ffffffffffffffffffffffffffffffffffffffff16816060019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff168152505085856000808111156104cb57fe5b81811015156104d657fe5b905060200201358160800181815250505050505050505050565b60608060606104fd610733565b60008086815260200190815260200160002060a0604051908101604052908160008201548152602001600182015481526020016002820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016003820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016004820154815250509050806000015184600060028111156105fa57fe5b81518110151561060657fe5b90602001906020020181815250508060200151846001600281111561062757fe5b81518110151561063357fe5b90602001906020020181815250508060400151826000600181111561065457fe5b81518110151561066057fe5b9060200190602002019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff16815250508060600151826001808111156106ae57fe5b8151811015156106ba57fe5b9060200190602002019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff168152505080608001518360008081111561070857fe5b81518110151561071457fe5b9060200190602002018181525050838383935093509350509193909250565b60a0604051908101604052806000801916815260200160008019168152602001600073ffffffffffffffffffffffffffffffffffffffff168152602001600073ffffffffffffffffffffffffffffffffffffffff16815260200160008152509056fea165627a7a72305820c4f5f5b2adef40287f8cc8efc1368c24e0066b475b3dc4c9ada5d1e8946ec18d0029",
+  "sourceMap": "91:1384:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;91:1384:3;;;;;;;",
+  "deployedSourceMap": "91:1384:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;317:539;;8:9:-1;5:2;;;30:1;27;20:12;5:2;317:539:3;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;317:539:3;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;317:539:3;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;317:539:3;;;;;;101:9:-1;95:2;81:12;77:21;67:8;63:36;60:51;39:11;25:12;22:29;11:108;8:2;;;132:1;129;122:12;8:2;317:539:3;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;317:539:3;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;317:539:3;;;;;;101:9:-1;95:2;81:12;77:21;67:8;63:36;60:51;39:11;25:12;22:29;11:108;8:2;;;132:1;129;122:12;8:2;317:539:3;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;317:539:3;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;317:539:3;;;;;;101:9:-1;95:2;81:12;77:21;67:8;63:36;60:51;39:11;25:12;22:29;11:108;8:2;;;132:1;129;122:12;8:2;317:539:3;;;;;;;;;;;;;;;862:602;;8:9:-1;5:2;;;30:1;27;20:12;5:2;862:602:3;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;862:602:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;862:602:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;862:602:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;862:602:3;;;;;;;;;;;;;;;;;;;;;317:539;454:15;473:10;;489:17;484:23;;;;;;;;473:35;;;;;;;;;;;;;;;454:54;;527:34;;:::i;:::-;565:6;:15;572:7;565:15;;;;;;;;;;;527:53;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;609:10;;625:19;620:25;;;;;;;;609:37;;;;;;;;;;;;;;;591:5;:15;;:55;;;;;674:12;;692:21;687:27;;;;;;;;674:41;;;;;;;;;;;;;;;;;656:5;:15;;:59;;;;;;;;;;;741:12;;759:19;754:25;;;;;;;;741:39;;;;;;;;;;;;;;;;;725:5;:13;;:55;;;;;;;;;;;810:8;;824:23;819:29;;;;;;;;810:39;;;;;;;;;;;;;;;790:5;:17;;:59;;;;;317:539;;;;;;;;:::o;862:602::-;915:27;944:22;968:29;1013:34;;:::i;:::-;1051:6;:15;1058:7;1051:15;;;;;;;;;;;1013:53;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1123:5;:13;;;1085:10;1101:17;1096:23;;;;;;;;1085:35;;;;;;;;;;;;;;;;;:51;;;;;1186:5;:15;;;1146:10;1162:19;1157:25;;;;;;;;1146:37;;;;;;;;;;;;;;;;;:55;;;;;1255:5;:15;;;1211:12;1229:21;1224:27;;;;;;;;1211:41;;;;;;;;;;;;;;;;;:59;;;;;;;;;;;1322:5;:13;;;1280:12;1298:19;1293:25;;;;;;;;1280:39;;;;;;;;;;;;;;;;;:55;;;;;;;;;;;1387:5;:17;;;1345:8;1359:23;1354:29;;;;;;;;1345:39;;;;;;;;;;;;;;;;;:59;;;;;1422:10;1434:8;1444:12;1414:43;;;;;;;862:602;;;;;:::o;91:1384::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity >=0.4.22 <0.6.0;\n\nimport \"./TradeInterface.sol\";\nimport \"./TradeLib.sol\";\n\ncontract TradeImpl is TradeInterface {\n\n    enum bytesData {tradeId,tradeType,assetId}\n    enum integerData {tradeAmount}\n    enum addressData {fromParty,toParty}\n\n    mapping(bytes32 => TradeLib.tradeStruct) trades;\n    \n    function submitTrade(bytes32[] calldata _bytesData , uint[] calldata _intData, address[] calldata _addressData) external \n    {\n\n        bytes32 tradeId =  _bytesData[uint(bytesData.tradeId)];\n        \n        TradeLib.tradeStruct memory  trade  = trades[tradeId];\n\n        trade.tradeType = _bytesData[uint(bytesData.tradeType)];\n        trade.fromParty = _addressData[uint(addressData.fromParty)];\n        trade.toParty = _addressData[uint(addressData.toParty)];\n        trade.tradeAmount = _intData[uint(integerData.tradeAmount)];\n    }\n\n    function getTrade(bytes32 tradeId) external returns (bytes32[] memory _bytesData, uint[] memory _intData, address[] memory _addressData)\n    {\n        TradeLib.tradeStruct memory  trade  = trades[tradeId];\n        \n        _bytesData[uint(bytesData.tradeId)] = trade.tradeId;\n        _bytesData[uint(bytesData.tradeType)] = trade.tradeType;\n        _addressData[uint(addressData.fromParty)] = trade.fromParty;\n        _addressData[uint(addressData.toParty)] = trade.toParty;\n        _intData[uint(integerData.tradeAmount)] = trade.tradeAmount;\n        return (_bytesData, _intData, _addressData);\n    }    \n    \n}\n",
+  "sourcePath": "/home/gourav_paliwal/Work/TradeApp/contracts/TradeImpl.sol",
+  "ast": {
+    "absolutePath": "/home/gourav_paliwal/Work/TradeApp/contracts/TradeImpl.sol",
+    "exportedSymbols": {
+      "TradeImpl": [
+        341
+      ]
+    },
+    "id": 342,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 171,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:3"
+      },
+      {
+        "absolutePath": "/home/gourav_paliwal/Work/TradeApp/contracts/TradeInterface.sol",
+        "file": "./TradeInterface.sol",
+        "id": 172,
+        "nodeType": "ImportDirective",
+        "scope": 342,
+        "sourceUnit": 371,
+        "src": "34:30:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/gourav_paliwal/Work/TradeApp/contracts/TradeLib.sol",
+        "file": "./TradeLib.sol",
+        "id": 173,
+        "nodeType": "ImportDirective",
+        "scope": 342,
+        "sourceUnit": 385,
+        "src": "65:24:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 174,
+              "name": "TradeInterface",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 370,
+              "src": "113:14:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TradeInterface_$370",
+                "typeString": "contract TradeInterface"
+              }
+            },
+            "id": 175,
+            "nodeType": "InheritanceSpecifier",
+            "src": "113:14:3"
+          }
+        ],
+        "contractDependencies": [
+          370
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 341,
+        "linearizedBaseContracts": [
+          341,
+          370
+        ],
+        "name": "TradeImpl",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "TradeImpl.bytesData",
+            "id": 179,
+            "members": [
+              {
+                "id": 176,
+                "name": "tradeId",
+                "nodeType": "EnumValue",
+                "src": "151:7:3"
+              },
+              {
+                "id": 177,
+                "name": "tradeType",
+                "nodeType": "EnumValue",
+                "src": "159:9:3"
+              },
+              {
+                "id": 178,
+                "name": "assetId",
+                "nodeType": "EnumValue",
+                "src": "169:7:3"
+              }
+            ],
+            "name": "bytesData",
+            "nodeType": "EnumDefinition",
+            "src": "135:42:3"
+          },
+          {
+            "canonicalName": "TradeImpl.integerData",
+            "id": 181,
+            "members": [
+              {
+                "id": 180,
+                "name": "tradeAmount",
+                "nodeType": "EnumValue",
+                "src": "200:11:3"
+              }
+            ],
+            "name": "integerData",
+            "nodeType": "EnumDefinition",
+            "src": "182:30:3"
+          },
+          {
+            "canonicalName": "TradeImpl.addressData",
+            "id": 184,
+            "members": [
+              {
+                "id": 182,
+                "name": "fromParty",
+                "nodeType": "EnumValue",
+                "src": "235:9:3"
+              },
+              {
+                "id": 183,
+                "name": "toParty",
+                "nodeType": "EnumValue",
+                "src": "245:7:3"
+              }
+            ],
+            "name": "addressData",
+            "nodeType": "EnumDefinition",
+            "src": "217:36:3"
+          },
+          {
+            "constant": false,
+            "id": 188,
+            "name": "trades",
+            "nodeType": "VariableDeclaration",
+            "scope": 341,
+            "src": "259:47:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_tradeStruct_$383_storage_$",
+              "typeString": "mapping(bytes32 => struct TradeLib.tradeStruct)"
+            },
+            "typeName": {
+              "id": 187,
+              "keyType": {
+                "id": 185,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "267:7:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "259:40:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_tradeStruct_$383_storage_$",
+                "typeString": "mapping(bytes32 => struct TradeLib.tradeStruct)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 186,
+                "name": "TradeLib.tradeStruct",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 383,
+                "src": "278:20:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_tradeStruct_$383_storage_ptr",
+                  "typeString": "struct TradeLib.tradeStruct"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 261,
+              "nodeType": "Block",
+              "src": "443:413:3",
+              "statements": [
+                {
+                  "assignments": [
+                    201
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 201,
+                      "name": "tradeId",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 261,
+                      "src": "454:15:3",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      },
+                      "typeName": {
+                        "id": 200,
+                        "name": "bytes32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "454:7:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 208,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 202,
+                      "name": "_bytesData",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 191,
+                      "src": "473:10:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_bytes32_$dyn_calldata_ptr",
+                        "typeString": "bytes32[] calldata"
+                      }
+                    },
+                    "id": 207,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 204,
+                            "name": "bytesData",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 179,
+                            "src": "489:9:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_enum$_bytesData_$179_$",
+                              "typeString": "type(enum TradeImpl.bytesData)"
+                            }
+                          },
+                          "id": 205,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberName": "tradeId",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "489:17:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_bytesData_$179",
+                            "typeString": "enum TradeImpl.bytesData"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_enum$_bytesData_$179",
+                            "typeString": "enum TradeImpl.bytesData"
+                          }
+                        ],
+                        "id": 203,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "484:4:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_uint256_$",
+                          "typeString": "type(uint256)"
+                        },
+                        "typeName": "uint"
+                      },
+                      "id": 206,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "484:23:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "473:35:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "454:54:3"
+                },
+                {
+                  "assignments": [
+                    212
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 212,
+                      "name": "trade",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 261,
+                      "src": "527:34:3",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                        "typeString": "struct TradeLib.tradeStruct"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 211,
+                        "name": "TradeLib.tradeStruct",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 383,
+                        "src": "527:20:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_storage_ptr",
+                          "typeString": "struct TradeLib.tradeStruct"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 216,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 213,
+                      "name": "trades",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 188,
+                      "src": "565:6:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_tradeStruct_$383_storage_$",
+                        "typeString": "mapping(bytes32 => struct TradeLib.tradeStruct storage ref)"
+                      }
+                    },
+                    "id": 215,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 214,
+                      "name": "tradeId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 201,
+                      "src": "572:7:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "565:15:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_tradeStruct_$383_storage",
+                      "typeString": "struct TradeLib.tradeStruct storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "527:53:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 226,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 217,
+                        "name": "trade",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 212,
+                        "src": "591:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                          "typeString": "struct TradeLib.tradeStruct memory"
+                        }
+                      },
+                      "id": 219,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "tradeType",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 376,
+                      "src": "591:15:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 220,
+                        "name": "_bytesData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 191,
+                        "src": "609:10:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_bytes32_$dyn_calldata_ptr",
+                          "typeString": "bytes32[] calldata"
+                        }
+                      },
+                      "id": 225,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 222,
+                              "name": "bytesData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 179,
+                              "src": "625:9:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_bytesData_$179_$",
+                                "typeString": "type(enum TradeImpl.bytesData)"
+                              }
+                            },
+                            "id": 223,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "tradeType",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "625:19:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_bytesData_$179",
+                              "typeString": "enum TradeImpl.bytesData"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_bytesData_$179",
+                              "typeString": "enum TradeImpl.bytesData"
+                            }
+                          ],
+                          "id": 221,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "620:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 224,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "620:25:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "609:37:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "591:55:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 227,
+                  "nodeType": "ExpressionStatement",
+                  "src": "591:55:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 237,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 228,
+                        "name": "trade",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 212,
+                        "src": "656:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                          "typeString": "struct TradeLib.tradeStruct memory"
+                        }
+                      },
+                      "id": 230,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "fromParty",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 378,
+                      "src": "656:15:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 231,
+                        "name": "_addressData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 197,
+                        "src": "674:12:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_address_$dyn_calldata_ptr",
+                          "typeString": "address[] calldata"
+                        }
+                      },
+                      "id": 236,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 233,
+                              "name": "addressData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 184,
+                              "src": "692:11:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_addressData_$184_$",
+                                "typeString": "type(enum TradeImpl.addressData)"
+                              }
+                            },
+                            "id": 234,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "fromParty",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "692:21:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_addressData_$184",
+                              "typeString": "enum TradeImpl.addressData"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_addressData_$184",
+                              "typeString": "enum TradeImpl.addressData"
+                            }
+                          ],
+                          "id": 232,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "687:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 235,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "687:27:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "674:41:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "656:59:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 238,
+                  "nodeType": "ExpressionStatement",
+                  "src": "656:59:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 248,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 239,
+                        "name": "trade",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 212,
+                        "src": "725:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                          "typeString": "struct TradeLib.tradeStruct memory"
+                        }
+                      },
+                      "id": 241,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "toParty",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 380,
+                      "src": "725:13:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 242,
+                        "name": "_addressData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 197,
+                        "src": "741:12:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_address_$dyn_calldata_ptr",
+                          "typeString": "address[] calldata"
+                        }
+                      },
+                      "id": 247,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 244,
+                              "name": "addressData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 184,
+                              "src": "759:11:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_addressData_$184_$",
+                                "typeString": "type(enum TradeImpl.addressData)"
+                              }
+                            },
+                            "id": 245,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "toParty",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "759:19:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_addressData_$184",
+                              "typeString": "enum TradeImpl.addressData"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_addressData_$184",
+                              "typeString": "enum TradeImpl.addressData"
+                            }
+                          ],
+                          "id": 243,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "754:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 246,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "754:25:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "741:39:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "725:55:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 249,
+                  "nodeType": "ExpressionStatement",
+                  "src": "725:55:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 259,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 250,
+                        "name": "trade",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 212,
+                        "src": "790:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                          "typeString": "struct TradeLib.tradeStruct memory"
+                        }
+                      },
+                      "id": 252,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "tradeAmount",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 382,
+                      "src": "790:17:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 253,
+                        "name": "_intData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 194,
+                        "src": "810:8:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                          "typeString": "uint256[] calldata"
+                        }
+                      },
+                      "id": 258,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 255,
+                              "name": "integerData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 181,
+                              "src": "824:11:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_integerData_$181_$",
+                                "typeString": "type(enum TradeImpl.integerData)"
+                              }
+                            },
+                            "id": 256,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "tradeAmount",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "824:23:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_integerData_$181",
+                              "typeString": "enum TradeImpl.integerData"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_integerData_$181",
+                              "typeString": "enum TradeImpl.integerData"
+                            }
+                          ],
+                          "id": 254,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "819:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 257,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "819:29:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "810:39:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "790:59:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 260,
+                  "nodeType": "ExpressionStatement",
+                  "src": "790:59:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 262,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "submitTrade",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 198,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 191,
+                  "name": "_bytesData",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 262,
+                  "src": "338:29:3",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_calldata_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 189,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "338:7:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 190,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "338:9:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 194,
+                  "name": "_intData",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 262,
+                  "src": "370:24:3",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 192,
+                      "name": "uint",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "370:4:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 193,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "370:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 197,
+                  "name": "_addressData",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 262,
+                  "src": "396:31:3",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_calldata_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 195,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "396:7:3",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 196,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "396:9:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "337:91:3"
+            },
+            "returnParameters": {
+              "id": 199,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "443:0:3"
+            },
+            "scope": 341,
+            "src": "317:539:3",
+            "stateMutability": "nonpayable",
+            "superFunction": 355,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 339,
+              "nodeType": "Block",
+              "src": "1003:461:3",
+              "statements": [
+                {
+                  "assignments": [
+                    279
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 279,
+                      "name": "trade",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 339,
+                      "src": "1013:34:3",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                        "typeString": "struct TradeLib.tradeStruct"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 278,
+                        "name": "TradeLib.tradeStruct",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 383,
+                        "src": "1013:20:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_storage_ptr",
+                          "typeString": "struct TradeLib.tradeStruct"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 283,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 280,
+                      "name": "trades",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 188,
+                      "src": "1051:6:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_tradeStruct_$383_storage_$",
+                        "typeString": "mapping(bytes32 => struct TradeLib.tradeStruct storage ref)"
+                      }
+                    },
+                    "id": 282,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 281,
+                      "name": "tradeId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 264,
+                      "src": "1058:7:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "1051:15:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_tradeStruct_$383_storage",
+                      "typeString": "struct TradeLib.tradeStruct storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1013:53:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 292,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 284,
+                        "name": "_bytesData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 268,
+                        "src": "1085:10:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                          "typeString": "bytes32[] memory"
+                        }
+                      },
+                      "id": 289,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 286,
+                              "name": "bytesData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 179,
+                              "src": "1101:9:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_bytesData_$179_$",
+                                "typeString": "type(enum TradeImpl.bytesData)"
+                              }
+                            },
+                            "id": 287,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "tradeId",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "1101:17:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_bytesData_$179",
+                              "typeString": "enum TradeImpl.bytesData"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_bytesData_$179",
+                              "typeString": "enum TradeImpl.bytesData"
+                            }
+                          ],
+                          "id": 285,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1096:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 288,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1096:23:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1085:35:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 290,
+                        "name": "trade",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 279,
+                        "src": "1123:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                          "typeString": "struct TradeLib.tradeStruct memory"
+                        }
+                      },
+                      "id": 291,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "tradeId",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 374,
+                      "src": "1123:13:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "1085:51:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 293,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1085:51:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 302,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 294,
+                        "name": "_bytesData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 268,
+                        "src": "1146:10:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                          "typeString": "bytes32[] memory"
+                        }
+                      },
+                      "id": 299,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 296,
+                              "name": "bytesData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 179,
+                              "src": "1162:9:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_bytesData_$179_$",
+                                "typeString": "type(enum TradeImpl.bytesData)"
+                              }
+                            },
+                            "id": 297,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "tradeType",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "1162:19:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_bytesData_$179",
+                              "typeString": "enum TradeImpl.bytesData"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_bytesData_$179",
+                              "typeString": "enum TradeImpl.bytesData"
+                            }
+                          ],
+                          "id": 295,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1157:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 298,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1157:25:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1146:37:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 300,
+                        "name": "trade",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 279,
+                        "src": "1186:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                          "typeString": "struct TradeLib.tradeStruct memory"
+                        }
+                      },
+                      "id": 301,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "tradeType",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 376,
+                      "src": "1186:15:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "1146:55:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 303,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1146:55:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 312,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 304,
+                        "name": "_addressData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 274,
+                        "src": "1211:12:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                          "typeString": "address[] memory"
+                        }
+                      },
+                      "id": 309,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 306,
+                              "name": "addressData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 184,
+                              "src": "1229:11:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_addressData_$184_$",
+                                "typeString": "type(enum TradeImpl.addressData)"
+                              }
+                            },
+                            "id": 307,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "fromParty",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "1229:21:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_addressData_$184",
+                              "typeString": "enum TradeImpl.addressData"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_addressData_$184",
+                              "typeString": "enum TradeImpl.addressData"
+                            }
+                          ],
+                          "id": 305,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1224:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 308,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1224:27:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1211:41:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 310,
+                        "name": "trade",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 279,
+                        "src": "1255:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                          "typeString": "struct TradeLib.tradeStruct memory"
+                        }
+                      },
+                      "id": 311,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "fromParty",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 378,
+                      "src": "1255:15:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "1211:59:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 313,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1211:59:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 322,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 314,
+                        "name": "_addressData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 274,
+                        "src": "1280:12:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                          "typeString": "address[] memory"
+                        }
+                      },
+                      "id": 319,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 316,
+                              "name": "addressData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 184,
+                              "src": "1298:11:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_addressData_$184_$",
+                                "typeString": "type(enum TradeImpl.addressData)"
+                              }
+                            },
+                            "id": 317,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "toParty",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "1298:19:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_addressData_$184",
+                              "typeString": "enum TradeImpl.addressData"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_addressData_$184",
+                              "typeString": "enum TradeImpl.addressData"
+                            }
+                          ],
+                          "id": 315,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1293:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 318,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1293:25:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1280:39:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 320,
+                        "name": "trade",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 279,
+                        "src": "1322:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                          "typeString": "struct TradeLib.tradeStruct memory"
+                        }
+                      },
+                      "id": 321,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "toParty",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 380,
+                      "src": "1322:13:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "1280:55:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 323,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1280:55:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 332,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 324,
+                        "name": "_intData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 271,
+                        "src": "1345:8:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                          "typeString": "uint256[] memory"
+                        }
+                      },
+                      "id": 329,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 326,
+                              "name": "integerData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 181,
+                              "src": "1359:11:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_integerData_$181_$",
+                                "typeString": "type(enum TradeImpl.integerData)"
+                              }
+                            },
+                            "id": 327,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "tradeAmount",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "1359:23:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_integerData_$181",
+                              "typeString": "enum TradeImpl.integerData"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_integerData_$181",
+                              "typeString": "enum TradeImpl.integerData"
+                            }
+                          ],
+                          "id": 325,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1354:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 328,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1354:29:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1345:39:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 330,
+                        "name": "trade",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 279,
+                        "src": "1387:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                          "typeString": "struct TradeLib.tradeStruct memory"
+                        }
+                      },
+                      "id": 331,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "tradeAmount",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 382,
+                      "src": "1387:17:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1345:59:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 333,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1345:59:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "id": 334,
+                        "name": "_bytesData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 268,
+                        "src": "1422:10:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                          "typeString": "bytes32[] memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 335,
+                        "name": "_intData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 271,
+                        "src": "1434:8:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                          "typeString": "uint256[] memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 336,
+                        "name": "_addressData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 274,
+                        "src": "1444:12:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                          "typeString": "address[] memory"
+                        }
+                      }
+                    ],
+                    "id": 337,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "1421:36:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_array$_t_bytes32_$dyn_memory_ptr_$_t_array$_t_uint256_$dyn_memory_ptr_$_t_array$_t_address_$dyn_memory_ptr_$",
+                      "typeString": "tuple(bytes32[] memory,uint256[] memory,address[] memory)"
+                    }
+                  },
+                  "functionReturnParameters": 275,
+                  "id": 338,
+                  "nodeType": "Return",
+                  "src": "1414:43:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 340,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTrade",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 265,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 264,
+                  "name": "tradeId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 340,
+                  "src": "880:15:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 263,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "880:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "879:17:3"
+            },
+            "returnParameters": {
+              "id": 275,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 268,
+                  "name": "_bytesData",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 340,
+                  "src": "915:27:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 266,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "915:7:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 267,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "915:9:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 271,
+                  "name": "_intData",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 340,
+                  "src": "944:22:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 269,
+                      "name": "uint",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "944:4:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 270,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "944:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 274,
+                  "name": "_addressData",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 340,
+                  "src": "968:29:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 272,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "968:7:3",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 273,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "968:9:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "914:84:3"
+            },
+            "scope": 341,
+            "src": "862:602:3",
+            "stateMutability": "nonpayable",
+            "superFunction": 369,
+            "visibility": "external"
+          }
+        ],
+        "scope": 342,
+        "src": "91:1384:3"
+      }
+    ],
+    "src": "0:1476:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/gourav_paliwal/Work/TradeApp/contracts/TradeImpl.sol",
+    "exportedSymbols": {
+      "TradeImpl": [
+        341
+      ]
+    },
+    "id": 342,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 171,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:3"
+      },
+      {
+        "absolutePath": "/home/gourav_paliwal/Work/TradeApp/contracts/TradeInterface.sol",
+        "file": "./TradeInterface.sol",
+        "id": 172,
+        "nodeType": "ImportDirective",
+        "scope": 342,
+        "sourceUnit": 371,
+        "src": "34:30:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/gourav_paliwal/Work/TradeApp/contracts/TradeLib.sol",
+        "file": "./TradeLib.sol",
+        "id": 173,
+        "nodeType": "ImportDirective",
+        "scope": 342,
+        "sourceUnit": 385,
+        "src": "65:24:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 174,
+              "name": "TradeInterface",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 370,
+              "src": "113:14:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TradeInterface_$370",
+                "typeString": "contract TradeInterface"
+              }
+            },
+            "id": 175,
+            "nodeType": "InheritanceSpecifier",
+            "src": "113:14:3"
+          }
+        ],
+        "contractDependencies": [
+          370
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 341,
+        "linearizedBaseContracts": [
+          341,
+          370
+        ],
+        "name": "TradeImpl",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "TradeImpl.bytesData",
+            "id": 179,
+            "members": [
+              {
+                "id": 176,
+                "name": "tradeId",
+                "nodeType": "EnumValue",
+                "src": "151:7:3"
+              },
+              {
+                "id": 177,
+                "name": "tradeType",
+                "nodeType": "EnumValue",
+                "src": "159:9:3"
+              },
+              {
+                "id": 178,
+                "name": "assetId",
+                "nodeType": "EnumValue",
+                "src": "169:7:3"
+              }
+            ],
+            "name": "bytesData",
+            "nodeType": "EnumDefinition",
+            "src": "135:42:3"
+          },
+          {
+            "canonicalName": "TradeImpl.integerData",
+            "id": 181,
+            "members": [
+              {
+                "id": 180,
+                "name": "tradeAmount",
+                "nodeType": "EnumValue",
+                "src": "200:11:3"
+              }
+            ],
+            "name": "integerData",
+            "nodeType": "EnumDefinition",
+            "src": "182:30:3"
+          },
+          {
+            "canonicalName": "TradeImpl.addressData",
+            "id": 184,
+            "members": [
+              {
+                "id": 182,
+                "name": "fromParty",
+                "nodeType": "EnumValue",
+                "src": "235:9:3"
+              },
+              {
+                "id": 183,
+                "name": "toParty",
+                "nodeType": "EnumValue",
+                "src": "245:7:3"
+              }
+            ],
+            "name": "addressData",
+            "nodeType": "EnumDefinition",
+            "src": "217:36:3"
+          },
+          {
+            "constant": false,
+            "id": 188,
+            "name": "trades",
+            "nodeType": "VariableDeclaration",
+            "scope": 341,
+            "src": "259:47:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_tradeStruct_$383_storage_$",
+              "typeString": "mapping(bytes32 => struct TradeLib.tradeStruct)"
+            },
+            "typeName": {
+              "id": 187,
+              "keyType": {
+                "id": 185,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "267:7:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "259:40:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_tradeStruct_$383_storage_$",
+                "typeString": "mapping(bytes32 => struct TradeLib.tradeStruct)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 186,
+                "name": "TradeLib.tradeStruct",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 383,
+                "src": "278:20:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_tradeStruct_$383_storage_ptr",
+                  "typeString": "struct TradeLib.tradeStruct"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 261,
+              "nodeType": "Block",
+              "src": "443:413:3",
+              "statements": [
+                {
+                  "assignments": [
+                    201
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 201,
+                      "name": "tradeId",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 261,
+                      "src": "454:15:3",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      },
+                      "typeName": {
+                        "id": 200,
+                        "name": "bytes32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "454:7:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 208,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 202,
+                      "name": "_bytesData",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 191,
+                      "src": "473:10:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_bytes32_$dyn_calldata_ptr",
+                        "typeString": "bytes32[] calldata"
+                      }
+                    },
+                    "id": 207,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 204,
+                            "name": "bytesData",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 179,
+                            "src": "489:9:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_enum$_bytesData_$179_$",
+                              "typeString": "type(enum TradeImpl.bytesData)"
+                            }
+                          },
+                          "id": 205,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberName": "tradeId",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "489:17:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_bytesData_$179",
+                            "typeString": "enum TradeImpl.bytesData"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_enum$_bytesData_$179",
+                            "typeString": "enum TradeImpl.bytesData"
+                          }
+                        ],
+                        "id": 203,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "484:4:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_uint256_$",
+                          "typeString": "type(uint256)"
+                        },
+                        "typeName": "uint"
+                      },
+                      "id": 206,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "484:23:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "473:35:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "454:54:3"
+                },
+                {
+                  "assignments": [
+                    212
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 212,
+                      "name": "trade",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 261,
+                      "src": "527:34:3",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                        "typeString": "struct TradeLib.tradeStruct"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 211,
+                        "name": "TradeLib.tradeStruct",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 383,
+                        "src": "527:20:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_storage_ptr",
+                          "typeString": "struct TradeLib.tradeStruct"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 216,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 213,
+                      "name": "trades",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 188,
+                      "src": "565:6:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_tradeStruct_$383_storage_$",
+                        "typeString": "mapping(bytes32 => struct TradeLib.tradeStruct storage ref)"
+                      }
+                    },
+                    "id": 215,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 214,
+                      "name": "tradeId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 201,
+                      "src": "572:7:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "565:15:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_tradeStruct_$383_storage",
+                      "typeString": "struct TradeLib.tradeStruct storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "527:53:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 226,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 217,
+                        "name": "trade",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 212,
+                        "src": "591:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                          "typeString": "struct TradeLib.tradeStruct memory"
+                        }
+                      },
+                      "id": 219,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "tradeType",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 376,
+                      "src": "591:15:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 220,
+                        "name": "_bytesData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 191,
+                        "src": "609:10:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_bytes32_$dyn_calldata_ptr",
+                          "typeString": "bytes32[] calldata"
+                        }
+                      },
+                      "id": 225,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 222,
+                              "name": "bytesData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 179,
+                              "src": "625:9:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_bytesData_$179_$",
+                                "typeString": "type(enum TradeImpl.bytesData)"
+                              }
+                            },
+                            "id": 223,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "tradeType",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "625:19:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_bytesData_$179",
+                              "typeString": "enum TradeImpl.bytesData"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_bytesData_$179",
+                              "typeString": "enum TradeImpl.bytesData"
+                            }
+                          ],
+                          "id": 221,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "620:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 224,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "620:25:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "609:37:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "591:55:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 227,
+                  "nodeType": "ExpressionStatement",
+                  "src": "591:55:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 237,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 228,
+                        "name": "trade",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 212,
+                        "src": "656:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                          "typeString": "struct TradeLib.tradeStruct memory"
+                        }
+                      },
+                      "id": 230,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "fromParty",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 378,
+                      "src": "656:15:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 231,
+                        "name": "_addressData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 197,
+                        "src": "674:12:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_address_$dyn_calldata_ptr",
+                          "typeString": "address[] calldata"
+                        }
+                      },
+                      "id": 236,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 233,
+                              "name": "addressData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 184,
+                              "src": "692:11:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_addressData_$184_$",
+                                "typeString": "type(enum TradeImpl.addressData)"
+                              }
+                            },
+                            "id": 234,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "fromParty",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "692:21:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_addressData_$184",
+                              "typeString": "enum TradeImpl.addressData"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_addressData_$184",
+                              "typeString": "enum TradeImpl.addressData"
+                            }
+                          ],
+                          "id": 232,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "687:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 235,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "687:27:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "674:41:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "656:59:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 238,
+                  "nodeType": "ExpressionStatement",
+                  "src": "656:59:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 248,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 239,
+                        "name": "trade",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 212,
+                        "src": "725:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                          "typeString": "struct TradeLib.tradeStruct memory"
+                        }
+                      },
+                      "id": 241,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "toParty",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 380,
+                      "src": "725:13:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 242,
+                        "name": "_addressData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 197,
+                        "src": "741:12:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_address_$dyn_calldata_ptr",
+                          "typeString": "address[] calldata"
+                        }
+                      },
+                      "id": 247,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 244,
+                              "name": "addressData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 184,
+                              "src": "759:11:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_addressData_$184_$",
+                                "typeString": "type(enum TradeImpl.addressData)"
+                              }
+                            },
+                            "id": 245,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "toParty",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "759:19:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_addressData_$184",
+                              "typeString": "enum TradeImpl.addressData"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_addressData_$184",
+                              "typeString": "enum TradeImpl.addressData"
+                            }
+                          ],
+                          "id": 243,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "754:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 246,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "754:25:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "741:39:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "725:55:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 249,
+                  "nodeType": "ExpressionStatement",
+                  "src": "725:55:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 259,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 250,
+                        "name": "trade",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 212,
+                        "src": "790:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                          "typeString": "struct TradeLib.tradeStruct memory"
+                        }
+                      },
+                      "id": 252,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "tradeAmount",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 382,
+                      "src": "790:17:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 253,
+                        "name": "_intData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 194,
+                        "src": "810:8:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                          "typeString": "uint256[] calldata"
+                        }
+                      },
+                      "id": 258,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 255,
+                              "name": "integerData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 181,
+                              "src": "824:11:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_integerData_$181_$",
+                                "typeString": "type(enum TradeImpl.integerData)"
+                              }
+                            },
+                            "id": 256,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "tradeAmount",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "824:23:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_integerData_$181",
+                              "typeString": "enum TradeImpl.integerData"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_integerData_$181",
+                              "typeString": "enum TradeImpl.integerData"
+                            }
+                          ],
+                          "id": 254,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "819:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 257,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "819:29:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "810:39:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "790:59:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 260,
+                  "nodeType": "ExpressionStatement",
+                  "src": "790:59:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 262,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "submitTrade",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 198,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 191,
+                  "name": "_bytesData",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 262,
+                  "src": "338:29:3",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_calldata_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 189,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "338:7:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 190,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "338:9:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 194,
+                  "name": "_intData",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 262,
+                  "src": "370:24:3",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 192,
+                      "name": "uint",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "370:4:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 193,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "370:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 197,
+                  "name": "_addressData",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 262,
+                  "src": "396:31:3",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_calldata_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 195,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "396:7:3",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 196,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "396:9:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "337:91:3"
+            },
+            "returnParameters": {
+              "id": 199,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "443:0:3"
+            },
+            "scope": 341,
+            "src": "317:539:3",
+            "stateMutability": "nonpayable",
+            "superFunction": 355,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 339,
+              "nodeType": "Block",
+              "src": "1003:461:3",
+              "statements": [
+                {
+                  "assignments": [
+                    279
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 279,
+                      "name": "trade",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 339,
+                      "src": "1013:34:3",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                        "typeString": "struct TradeLib.tradeStruct"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 278,
+                        "name": "TradeLib.tradeStruct",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 383,
+                        "src": "1013:20:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_storage_ptr",
+                          "typeString": "struct TradeLib.tradeStruct"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 283,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 280,
+                      "name": "trades",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 188,
+                      "src": "1051:6:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_tradeStruct_$383_storage_$",
+                        "typeString": "mapping(bytes32 => struct TradeLib.tradeStruct storage ref)"
+                      }
+                    },
+                    "id": 282,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 281,
+                      "name": "tradeId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 264,
+                      "src": "1058:7:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "1051:15:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_tradeStruct_$383_storage",
+                      "typeString": "struct TradeLib.tradeStruct storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1013:53:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 292,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 284,
+                        "name": "_bytesData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 268,
+                        "src": "1085:10:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                          "typeString": "bytes32[] memory"
+                        }
+                      },
+                      "id": 289,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 286,
+                              "name": "bytesData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 179,
+                              "src": "1101:9:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_bytesData_$179_$",
+                                "typeString": "type(enum TradeImpl.bytesData)"
+                              }
+                            },
+                            "id": 287,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "tradeId",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "1101:17:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_bytesData_$179",
+                              "typeString": "enum TradeImpl.bytesData"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_bytesData_$179",
+                              "typeString": "enum TradeImpl.bytesData"
+                            }
+                          ],
+                          "id": 285,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1096:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 288,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1096:23:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1085:35:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 290,
+                        "name": "trade",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 279,
+                        "src": "1123:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                          "typeString": "struct TradeLib.tradeStruct memory"
+                        }
+                      },
+                      "id": 291,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "tradeId",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 374,
+                      "src": "1123:13:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "1085:51:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 293,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1085:51:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 302,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 294,
+                        "name": "_bytesData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 268,
+                        "src": "1146:10:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                          "typeString": "bytes32[] memory"
+                        }
+                      },
+                      "id": 299,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 296,
+                              "name": "bytesData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 179,
+                              "src": "1162:9:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_bytesData_$179_$",
+                                "typeString": "type(enum TradeImpl.bytesData)"
+                              }
+                            },
+                            "id": 297,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "tradeType",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "1162:19:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_bytesData_$179",
+                              "typeString": "enum TradeImpl.bytesData"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_bytesData_$179",
+                              "typeString": "enum TradeImpl.bytesData"
+                            }
+                          ],
+                          "id": 295,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1157:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 298,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1157:25:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1146:37:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 300,
+                        "name": "trade",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 279,
+                        "src": "1186:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                          "typeString": "struct TradeLib.tradeStruct memory"
+                        }
+                      },
+                      "id": 301,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "tradeType",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 376,
+                      "src": "1186:15:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "1146:55:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 303,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1146:55:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 312,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 304,
+                        "name": "_addressData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 274,
+                        "src": "1211:12:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                          "typeString": "address[] memory"
+                        }
+                      },
+                      "id": 309,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 306,
+                              "name": "addressData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 184,
+                              "src": "1229:11:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_addressData_$184_$",
+                                "typeString": "type(enum TradeImpl.addressData)"
+                              }
+                            },
+                            "id": 307,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "fromParty",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "1229:21:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_addressData_$184",
+                              "typeString": "enum TradeImpl.addressData"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_addressData_$184",
+                              "typeString": "enum TradeImpl.addressData"
+                            }
+                          ],
+                          "id": 305,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1224:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 308,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1224:27:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1211:41:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 310,
+                        "name": "trade",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 279,
+                        "src": "1255:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                          "typeString": "struct TradeLib.tradeStruct memory"
+                        }
+                      },
+                      "id": 311,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "fromParty",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 378,
+                      "src": "1255:15:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "1211:59:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 313,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1211:59:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 322,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 314,
+                        "name": "_addressData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 274,
+                        "src": "1280:12:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                          "typeString": "address[] memory"
+                        }
+                      },
+                      "id": 319,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 316,
+                              "name": "addressData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 184,
+                              "src": "1298:11:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_addressData_$184_$",
+                                "typeString": "type(enum TradeImpl.addressData)"
+                              }
+                            },
+                            "id": 317,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "toParty",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "1298:19:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_addressData_$184",
+                              "typeString": "enum TradeImpl.addressData"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_addressData_$184",
+                              "typeString": "enum TradeImpl.addressData"
+                            }
+                          ],
+                          "id": 315,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1293:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 318,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1293:25:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1280:39:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 320,
+                        "name": "trade",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 279,
+                        "src": "1322:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                          "typeString": "struct TradeLib.tradeStruct memory"
+                        }
+                      },
+                      "id": 321,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "toParty",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 380,
+                      "src": "1322:13:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "1280:55:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 323,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1280:55:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 332,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 324,
+                        "name": "_intData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 271,
+                        "src": "1345:8:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                          "typeString": "uint256[] memory"
+                        }
+                      },
+                      "id": 329,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 326,
+                              "name": "integerData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 181,
+                              "src": "1359:11:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_integerData_$181_$",
+                                "typeString": "type(enum TradeImpl.integerData)"
+                              }
+                            },
+                            "id": 327,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "tradeAmount",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "1359:23:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_integerData_$181",
+                              "typeString": "enum TradeImpl.integerData"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_enum$_integerData_$181",
+                              "typeString": "enum TradeImpl.integerData"
+                            }
+                          ],
+                          "id": 325,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1354:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 328,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1354:29:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1345:39:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 330,
+                        "name": "trade",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 279,
+                        "src": "1387:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_tradeStruct_$383_memory_ptr",
+                          "typeString": "struct TradeLib.tradeStruct memory"
+                        }
+                      },
+                      "id": 331,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "tradeAmount",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 382,
+                      "src": "1387:17:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1345:59:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 333,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1345:59:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "id": 334,
+                        "name": "_bytesData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 268,
+                        "src": "1422:10:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                          "typeString": "bytes32[] memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 335,
+                        "name": "_intData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 271,
+                        "src": "1434:8:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                          "typeString": "uint256[] memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 336,
+                        "name": "_addressData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 274,
+                        "src": "1444:12:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                          "typeString": "address[] memory"
+                        }
+                      }
+                    ],
+                    "id": 337,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "1421:36:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_array$_t_bytes32_$dyn_memory_ptr_$_t_array$_t_uint256_$dyn_memory_ptr_$_t_array$_t_address_$dyn_memory_ptr_$",
+                      "typeString": "tuple(bytes32[] memory,uint256[] memory,address[] memory)"
+                    }
+                  },
+                  "functionReturnParameters": 275,
+                  "id": 338,
+                  "nodeType": "Return",
+                  "src": "1414:43:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 340,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTrade",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 265,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 264,
+                  "name": "tradeId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 340,
+                  "src": "880:15:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 263,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "880:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "879:17:3"
+            },
+            "returnParameters": {
+              "id": 275,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 268,
+                  "name": "_bytesData",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 340,
+                  "src": "915:27:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 266,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "915:7:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 267,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "915:9:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 271,
+                  "name": "_intData",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 340,
+                  "src": "944:22:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 269,
+                      "name": "uint",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "944:4:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 270,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "944:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 274,
+                  "name": "_addressData",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 340,
+                  "src": "968:29:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 272,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "968:7:3",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 273,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "968:9:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "914:84:3"
+            },
+            "scope": 341,
+            "src": "862:602:3",
+            "stateMutability": "nonpayable",
+            "superFunction": 369,
+            "visibility": "external"
+          }
+        ],
+        "scope": 342,
+        "src": "91:1384:3"
+      }
+    ],
+    "src": "0:1476:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {
+    "52743": {
+      "events": {},
+      "links": {},
+      "address": "0x1f55ef9d26260fa0d4a6ef5a5e97e36fff953b97",
+      "transactionHash": "0xa043e2fb66042cf4ac08a22066019e85f0d998ec4fc0b19807ce9bb247286102"
+    },
+    "70552": {
+      "events": {},
+      "links": {},
+      "address": "0xc4125dbe2ffff996a335028122d167c05de7bae6",
+      "transactionHash": "0x6c203b1fb5291ddf04843434c50c7e30474eb330c25ceabf818dd24ee68cdd3d"
+    }
+  },
+  "schemaVersion": "2.0.2",
+  "updatedAt": "2019-04-30T08:35:38.232Z"
+}
